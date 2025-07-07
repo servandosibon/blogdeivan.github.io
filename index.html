@@ -6,16 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog de Iván</title>
     <style>
-        body {
-            font-family: "Comic Sans MS", cursive, sans-serif;
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
             background-image: url('https://assets.weforum.org/article/image/FFL51vOuPJ7ZB5-S--_QKyZeEE-TiD1R8HP3DAonraY.jpg');
             background-size: cover;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-position: center center;
-            margin: 0;
-            padding: 1rem;
+            background-position: center;
+            filter: brightness(0.5) blur(4px);
+            z-index: -1;
         }
+
 
 
 
